@@ -117,7 +117,7 @@ const dataOutput = async () => {
                 fs.appendFileSync('C:\\deploys\\valor_uva\\'+'valor_uva-'+processParams.fechaDesde+'hasta'+processParams.fechaHasta+'.json',putJSONData)
 
             }   
-                //browser.close()
+                browser.close()
         } catch (err) {
             console.log(err)
             reject(err)
@@ -170,7 +170,7 @@ const processDataRequest = async (dayDesde, monthDesde, yearDesde,dayHasta,month
 
 const preparePage = async () => {
     browser = await puppeteer.launch({
-         headless: false,
+         headless: true,
         //headless: true,
         args: [
             '--no-sandbox',

@@ -118,6 +118,7 @@ const dataOutput = async () => {
 
             }   
                 browser.close()
+                process.exit()
         } catch (err) {
             console.log(err)
             reject(err)

@@ -114,7 +114,7 @@ const dataOutput = async () => {
                      'Valor':valorTabla
                 })
                 
-                fs.appendFileSync('C:\\deploys\\valor_uva\\'+'valor_uva-'+processParams.fechaDesde+'hasta'+processParams.fechaHasta+'.json',putJSONData)
+                fs.appendFileSync('valor_uva\\'+'valor_uva-'+processParams.fechaDesde+'hasta'+processParams.fechaHasta+'.json',putJSONData)
 
             }   
                 browser.close()
